@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/ripple_bg"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:text="Bus Tranport System:Tickets"
+            android:gravity="center_horizontal"
+            android:padding="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:drawableLeft="@android:drawable/ic_menu_directions"
+            android:id="@+id/destination"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:text="Destination : Accra"
+            android:gravity="center_vertical"
+            android:padding="1dp" />
+        <include layout="@layout/divider_horizontal"
+            android:layout_below="@+id/destination"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destination"
+            android:drawableLeft="@android:drawable/ic_menu_set_as"
+            android:id="@+id/departure"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:text="Departure"
+            android:gravity="center_vertical"
+            android:padding="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/departure"
+            android:drawableLeft="@android:drawable/ic_menu_today"
+            android:id="@+id/departureFrom"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:text="From :"
+            android:gravity="center_vertical"
+            android:padding="1dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/departureFrom"
+            android:drawableLeft="@android:drawable/ic_menu_today"
+            android:id="@+id/departureTo"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:text="To :"
+            android:gravity="center_vertical"
+            android:padding="1dp" />
+
+        <include layout="@layout/divider_horizontal"
+            android:layout_below="@+id/departureTo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/departureTo"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_sort_alphabetically"
+            android:id="@+id/serialnumber"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:text="Serial Number :"
+            android:gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:padding="1dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Buy Ticket"
+            android:background="@drawable/btn_bg"
+            android:id="@+id/btnTicket"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp" />
+</LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

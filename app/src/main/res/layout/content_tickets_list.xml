@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.webege.profause.bustransportsystem.view.TicketsListActivity"
+    tools:showIn="@layout/activity_tickets_list"
+    android:background="@color/colorGreylighter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/l1"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/destination"
+            android:layout_height="wrap_content"
+            android:text="Accra"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/l1"
+        android:id="@+id/refresh"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/ticketList"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
